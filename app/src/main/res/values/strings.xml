@@ -1,3 +1,51 @@
 <resources>
+    <!-- Nombre oficial de la aplicación (exigido en el enunciado) -->
     <string name="app_name">Datos personales</string>
+
+    <!-- Selector de Idioma -->
+    <string name="label_idioma">Idioma:</string>
+    <string name="idioma_es">Español</string>
+    <string name="idioma_en">English</string>
+    <string name="idioma_fr">Français</string>
+
+    <!-- Campos del formulario (hints) -->
+    <string name="hint_nombre">Escriba aquí su nombre</string>
+    <string name="hint_apellidos">Escriba aquí sus apellidos</string>
+    <string name="hint_edad">Ingrese su edad</string>
+
+    <!-- Genero (RadioButtons) -->
+    <string name="genero_hombre">Hombre</string>
+    <string name="genero_mujer">Mujer</string>
+
+    <!-- Estado Civil (Opciones para el Spinner) -->
+    <string name="estado_soltero">Solter@</string>
+    <string name="estado_casado">Casad@</string>
+    <string name="estado_separado">Separad@</string>
+    <string name="estado_visudo">Viud@</string>
+    <string name="estado_otro">Otr@</string>
+
+    <!-- Switch Hijos -->
+    <string name="pregunta_hijos">¿Tiene hijos?</string>
+    <string name="opcion_si">Sí</string>
+    <string name="opcion_no">No</string>
+
+    <!-- Botones principales -->
+    <string name="btn_mostrar">Mostrar Datos</string>
+    <string name="btn_reiniciar">Reiniciar</string>
+
+    <!-- Mensaje de error (Texto en rojo) -->
+    <string name="error_faltan_campos">Te falta escribir nombre, apellidos y edad</string>
+
+    <!-- Partes del texto para construir la notificación dinámica por Java -->
+    <string name="notif_mayor_edad">mayor de edad</string>
+    <string name="notif_menor_edad">menor de edad</string>
+    <string name="notif_hombre">hombre</string>
+    <string name="notif_mujer">mujer</string>
+    <string name="notif_soltero">soltero/a</string>
+    <string name="notif_casado">casado/a</string>
+    <string name="notif_separado">separado/a</string>
+    <string name="notif_visudo">viudo/a</string>
+    <string name="notif_otro">otro</string>
+    <string name="notif_con_hijos">y con hijos.</string>
+    <string name="notif_sin_hijos">y sin hijos.</string>
 </resources>

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Tag principal del manifiesto que define los espacios de nombres para los atributos de Android -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permiso necesario para mostrar notificaciones al usuario en Android 13+ (API 33) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Configuración global de la aplicación (icono, nombre, tema y reglas de backup) -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,13 +16,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DatosPersonales">
+
+        <!-- Declaración de la actividad principal (MainActivity)[cite: 10] -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
+
+            <!-- Filtro de intenciones que define a esta actividad como el punto de entrada principal de la app[cite: 10] -->
             <intent-filter>
+                <!-- Indica que esta actividad se ejecuta al pulsar el icono de la app[cite: 10] -->
                 <action android:name="android.intent.action.MAIN" />
 
+                <!-- Muestra el icono de la app en el menú/lanzador del dispositivo[cite: 10] -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

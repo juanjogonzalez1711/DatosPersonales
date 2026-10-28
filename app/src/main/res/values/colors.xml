@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Tag raíz que contiene la definición centralizada de los recursos de color de la app -->
 <resources>
+    <!-- Color negro estandar definido en formato hexadecimal (AARRGGBB) -->
     <color name="black">#FF000000</color>
+
+    <!-- Color blanco estandar -->
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Color morado corporativo principal usado para temas y componentes visuales -->
+    <color name="purple_primary">#5C3D99</color>
+
+    <!-- Color rojo para destacar mensajes de error en la validacion del formulario -->
+    <color name="red_error">#FF0000</color>
 </resources>
