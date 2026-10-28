@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- Fila Superior: Idioma -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_idioma"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinnerIdioma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Distribución en 2 Columnas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Columna Izquierda: Datos personales -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_nombre"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/etApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/hint_apellidos"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/etEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/hint_edad"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!-- Columna Derecha: Opciones y Estados -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rgGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbHombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genero_hombre" />
+
+                    <RadioButton
+                        android:id="@+id/rbMujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/genero_mujer" />
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/spinnerEstadoCivil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchHijos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="@string/pregunta_hijos" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Mensajes de Error -->
+        <TextView
+            android:id="@+id/tvMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/red_error"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Botones de Acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMostrar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_primary"
+                android:text="@string/btn_mostrar" />
+
+            <Button
+                android:id="@+id/btnReiniciar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_primary"
+                android:text="@string/btn_reiniciar" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

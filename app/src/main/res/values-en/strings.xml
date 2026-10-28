@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personal Data</string>
+
+    <!-- Language Selector -->
+    <string name="label_idioma">Language:</string>
+    <string name="idioma_es">Spanish</string>
+    <string name="idioma_en">English</string>
+    <string name="idioma_fr">French</string>
+
+    <!-- Form hints -->
+    <string name="hint_nombre">Enter your name here</string>
+    <string name="hint_apellidos">Enter your surnames here</string>
+    <string name="hint_edad">Enter your age</string>
+
+    <!-- Gender -->
+    <string name="genero_hombre">Male</string>
+    <string name="genero_mujer">Female</string>
+
+    <!-- Civil Status -->
+    <string name="estado_soltero">Single</string>
+    <string name="estado_casado">Married</string>
+    <string name="estado_separado">Separated</string>
+    <string name="estado_visudo">Widowed</string>
+    <string name="estado_otro">Other</string>
+
+    <!-- Switch Children -->
+    <string name="pregunta_hijos">Do you have children?</string>
+    <string name="opcion_si">Yes</string>
+    <string name="opcion_no">No</string>
+
+    <!-- Buttons -->
+    <string name="btn_mostrar">Show Data</string>
+    <string name="btn_reiniciar">Reset</string>
+
+    <!-- Error message -->
+    <string name="error_faltan_campos">You need to enter name, surnames and age</string>
+
+    <!-- Notification strings -->
+    <string name="notif_mayor_edad">of legal age</string>
+    <string name="notif_menor_edad">underage</string>
+    <string name="notif_hombre">male</string>
+    <string name="notif_mujer">female</string>
+    <string name="notif_soltero">single</string>
+    <string name="notif_casado">married</string>
+    <string name="notif_separado">separated</string>
+    <string name="notif_visudo">widowed</string>
+    <string name="notif_otro">other</string>
+    <string name="notif_con_hijos">and with children.</string>
+    <string name="notif_sin_hijos">and without children.</string>
+</resources>

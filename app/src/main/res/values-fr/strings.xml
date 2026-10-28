@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Données personnelles</string>
+
+    <!-- Selector de Idioma -->
+    <string name="label_idioma">Langue :</string>
+    <string name="idioma_es">Espagnol</string>
+    <string name="idioma_en">Anglais</string>
+    <string name="idioma_fr">Français</string>
+
+    <!-- Campos del formulario (hints) -->
+    <string name="hint_nombre">Entrez votre prénom ici</string>
+    <string name="hint_apellidos">Entrez votre nom ici</string>
+    <string name="hint_edad">Entrez votre âge</string>
+
+    <!-- Genero (RadioButtons) -->
+    <string name="genero_hombre">Homme</string>
+    <string name="genero_mujer">Femme</string>
+
+    <!-- Estado Civil (Opciones para el Spinner) -->
+    <string name="estado_soltero">Célibataire</string>
+    <string name="estado_casado">Marié(e)</string>
+    <string name="estado_separado">Séparé(e)</string>
+    <string name="estado_visudo">Veuf/Veuve</string>
+    <string name="estado_otro">Autre</string>
+
+    <!-- Switch Hijos -->
+    <string name="pregunta_hijos">Avez-vous des enfants ?</string>
+    <string name="opcion_si">Oui</string>
+    <string name="opcion_no">Non</string>
+
+    <!-- Botones principales -->
+    <string name="btn_mostrar">Afficher les données</string>
+    <string name="btn_reiniciar">Réinitialiser</string>
+
+    <!-- Mensaje de error (Texto en rojo) -->
+    <string name="error_faltan_campos">Vous devez entrer le prénom, le nom et l\'âge</string>
+
+    <!-- Partes del texto para construir la notificación dinámica por Java -->
+    <string name="notif_mayor_edad">majeur(e)</string>
+    <string name="notif_menor_edad">mineur(e)</string>
+    <string name="notif_hombre">homme</string>
+    <string name="notif_mujer">femme</string>
+    <string name="notif_soltero">célibataire</string>
+    <string name="notif_casado">marié(e)</string>
+    <string name="notif_separado">séparé(e)</string>
+    <string name="notif_visudo">veuf/veuve</string>
+    <string name="notif_otro">autre</string>
+    <string name="notif_con_hijos">et avec des enfants.</string>
+    <string name="notif_sin_hijos">et sans enfants.</string>
+</resources>
